@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-es2017"
+  ],
+  "plugins":[
+    ["@babel/plugin-transform-runtime", {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true,
+        "moduleName": "@babel/runtime"
+      },
+    ],
+    "@babel/plugin-proposal-object-rest-spread"
+  ]
+}

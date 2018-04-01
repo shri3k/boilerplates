@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb",
+  rules:{
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/require-default-props": ["disabled"],
+    "function-paren-newline": ["error", "consistent"],
+    "arrow-parens": "off",
+    "generator-star-spacing": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/forbid-prop-types": "off"
+  }
+}
