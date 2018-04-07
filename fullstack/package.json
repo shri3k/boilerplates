@@ -58,6 +58,7 @@
     "prettier": "^1.11.1",
     "redux-devtools-extension": "^2.13.2",
     "source-map-loader": "^0.2.3",
+    "static-server": "^2.2.1",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13"
   },
