@@ -1,5 +1,11 @@
 {
   "extends": "airbnb",
+  "globals": {
+    "localStorage": true,
+    "Auth0Lock": true,
+    "window": true,
+    "fetch":true
+  },
   rules:{
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/require-default-props": ["disabled"],

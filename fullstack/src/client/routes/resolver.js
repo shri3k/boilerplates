@@ -7,7 +7,7 @@ async function resolver({ path = '/', query = '', context = {} }) {
     path,
     query,
   });
-  const route = await router.resolve({ pathname: path });
+  const route = await router.resolve({ pathname: path, ...context });
   return route;
 }
 

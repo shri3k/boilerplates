@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import * as actionCreators from '../../actions/dashboard';
+import Login from '../../components/Login';
 
 class Dashboard extends PureComponent {
   constructor(props) {
@@ -32,10 +33,11 @@ class Dashboard extends PureComponent {
     const lis = lists.map((l, i) => <li k={i}>{l}</li>);
     return (
       <div>
-        <form onSubmit={e => this.submit(e)}>
-          <input type="text" onChange={e => this.handleChange(e)} value={todoVal} />
+        <form onSubmit={(e) => this.submit(e)}>
+          <input type="text" onChange={(e) => this.handleChange(e)} value={todoVal} />
           <input type="submit" />
         </form>
+        <Login />
         <ul>{lis}</ul>
       </div>
     );
@@ -48,7 +50,7 @@ Dashboard.propTypes = {
   lists: PropTypes.shape([]),
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   currentVal: state.todo,
   lists: state.todo.lists,
 });
